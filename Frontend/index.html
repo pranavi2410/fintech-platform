@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fintech Platform</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Fintech Platform</h1>
+    <div id="auth">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <input type="email" id="loginEmail" placeholder="Email" required>
+        <input type="password" id="loginPassword" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+      <h2>Register</h2>
+      <form id="registerForm">
+        <input type="text" id="registerUsername" placeholder="Username" required>
+        <input type="email" id="registerEmail" placeholder="Email" required>
+        <input type="password" id="registerPassword" placeholder="Password" required>
+        <button type="submit">Register</button>
+      </form>
+    </div>
+    <div id="dashboard" style="display:none;">
+      <h2>Welcome, <span id="username"></span></h2>
+      <button id="logoutButton">Logout</button>
+      <h2>Transactions</h2>
+      <form id="transactionForm">
+        <input type="number" id="amount" placeholder="Amount" required>
+        <select id="transactionType" required>
+          <option value="deposit">Deposit</option>
+          <option value="withdrawal">Withdrawal</option>
+        </select>
+        <button type="submit">Submit</button>
+      </form>
+      <h3>Transaction History</h3>
+      <ul id="transactionList"></ul>
+    </div>
+  </div>
+  <script src="js/main.js
